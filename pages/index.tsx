@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useStickyHeaderScript } from '../hooks/header';
-import { BlogContainer } from "../components/BlogContainer";
+import { BlogContainer } from '../components/BlogContainer';
 
 export default function Home() {
   useStickyHeaderScript();
@@ -17,7 +17,6 @@ export default function Home() {
       </Head>
 
       <BlogContainer />
-
     </div>
-  )
+  );
 }
