@@ -2,13 +2,13 @@ export const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-400 shadow">
       <div className="container max-w-4xl mx-auto flex py-8">
-
         <div className="w-full mx-auto flex flex-wrap">
           <div className="flex w-full md:w-1/2 ">
             <div className="px-8">
               <h3 className="font-bold text-gray-900">About</h3>
               <p className="py-4 text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel mi ut felis
+                tempus commodo nec id erat. Suspendisse consectetur dapibus velit ut lacinia.
               </p>
             </div>
           </div>
@@ -18,13 +18,28 @@ export const Footer = () => {
               <h3 className="font-bold text-gray-900">Social</h3>
               <ul className="list-reset items-center text-sm pt-3">
                 <li>
-                  <a className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Add social link</a>
+                  <a
+                    className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                    href="#"
+                  >
+                    Add social link
+                  </a>
                 </li>
                 <li>
-                  <a className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Add social link</a>
+                  <a
+                    className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                    href="#"
+                  >
+                    Add social link
+                  </a>
                 </li>
                 <li>
-                  <a className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Add social link</a>
+                  <a
+                    className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-1"
+                    href="#"
+                  >
+                    Add social link
+                  </a>
                 </li>
               </ul>
             </div>
@@ -33,4 +48,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-}
+};
