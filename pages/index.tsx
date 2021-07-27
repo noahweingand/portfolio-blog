@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { useStickyHeaderScript } from '../hooks/header';
 import { BlogContainer } from '../components/blog-container';
+import { PortfolioContainer } from '../components/portfolio-container';
 
 export default function Home() {
   useStickyHeaderScript();
@@ -16,6 +17,7 @@ export default function Home() {
         <meta name="keywords" content="keywords,here" />
       </Head>
 
+      {/* <PortfolioContainer /> */}
       <BlogContainer />
     </div>
   );
