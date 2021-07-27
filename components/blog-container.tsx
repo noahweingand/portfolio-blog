@@ -1,6 +1,4 @@
-import { Nav } from './blog/nav';
-import { ArticleContainer } from './blog/article-container';
-import { Footer } from './blog/footer';
+import { Nav, ArticleContainer, Footer } from './blog/index';
 
 export const BlogContainer = () => {
   return (
