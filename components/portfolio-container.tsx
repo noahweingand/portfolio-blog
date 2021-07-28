@@ -1,9 +1,10 @@
-import { Nav } from './portfolio/index';
+import { Nav, Home } from './portfolio/index';
 
 export const PortfolioContainer = () => {
   return (
-    <body className="bg-gray-100 font-sans leading-normal tracking-normal">
+    <div className="">
       <Nav />
-    </body>
+      <Home name="Noah Weingand" title="Full Stack Developer" />
+    </div>
   );
 };

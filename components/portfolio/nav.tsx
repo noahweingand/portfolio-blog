@@ -3,10 +3,7 @@ export const Nav = () => {
     <nav id="header" className="fixed w-full z-10 top-0">
       <div className="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
         <div className="pl-4">
-          <a
-            className="text-gray-900 text-base no-underline hover:no-underline font-extrabold text-xl"
-            href="#"
-          >
+          <a className="text-white text-base no-underline hover:no-underline font-extrabold text-xl">
             nowein.dev
           </a>
         </div>
@@ -33,13 +30,13 @@ export const Nav = () => {
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
             <li className="mr-3">
-              <a className="inline-block py-2 px-4 text-gray-900 font-bold no-underline" href="#">
+              <a className="inline-block py-2 px-4 text-white font-bold no-underline" href="#">
                 Active
               </a>
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                className="inline-block text-white no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
                 href="#"
               >
                 link
@@ -47,7 +44,7 @@ export const Nav = () => {
             </li>
             <li className="mr-3">
               <a
-                className="inline-block text-gray-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+                className="inline-block text-white no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
                 href="#"
               >
                 link
