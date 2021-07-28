@@ -1,4 +1,8 @@
+import { useStickyHeaderScript } from '../../hooks/header';
+
 export const Nav = () => {
+  useStickyHeaderScript();
+
   return (
     <nav id="header" className="fixed w-full z-10 top-0">
       <div
