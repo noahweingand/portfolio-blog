@@ -1,7 +1,11 @@
 import Head from 'next/head';
-import { Nav, ArticleContainer, Footer } from './blog/index';
+import { Nav, Footer } from './blog/index';
 
-export const BlogContainer = () => {
+type BlogProps = {
+  children: React.ReactNode;
+};
+
+export const BlogContainer: React.FC<BlogProps> = ({ children }) => {
   return (
     <div>
       <Head>
@@ -14,7 +18,7 @@ export const BlogContainer = () => {
       </Head>
       <body className="bg-gray-100 font-sans leading-normal tracking-normal">
         <Nav />
-        <ArticleContainer />
+        {children}
         <Footer />
       </body>
     </div>

@@ -1,6 +1,10 @@
-import { Nav, Home } from './portfolio/index';
+import { Nav } from './portfolio/index';
 
-export const PortfolioContainer = () => {
+type PortfolioProps = {
+  children: React.ReactNode;
+};
+
+export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
   return (
     <header className="relative h-screen overflow-hidden">
       <video autoPlay loop muted className="absolute z-0 w-auto min-w-full min-h-full max-w-none">
@@ -8,7 +12,7 @@ export const PortfolioContainer = () => {
         Your browser does not support the video tag.
       </video>
       <Nav />
-      <Home name="Noah Weingand" title="Full Stack Developer" />
+      {children}
     </header>
   );
 };
