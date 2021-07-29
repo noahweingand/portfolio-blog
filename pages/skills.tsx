@@ -1,10 +1,10 @@
 import { PortfolioContainer } from '../components/portfolio-container';
 import { Landing } from '../components/portfolio/landing';
 
-export default function Home() {
+export default function Skills() {
   return (
     <PortfolioContainer>
-      <Landing name="Noah Weingand" title="Full Stack Developer" />
+      <Landing name="Skills" title="I Am Testing!" />
     </PortfolioContainer>
   );
 }
