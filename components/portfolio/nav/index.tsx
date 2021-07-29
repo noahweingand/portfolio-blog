@@ -36,8 +36,8 @@ export const Nav = () => {
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">
-            {links.map((link, idx) => {
-              return <NavLink name={link} />;
+            {links.map((link, key) => {
+              return <NavLink key={key} name={link} />;
             })}
           </ul>
         </div>
