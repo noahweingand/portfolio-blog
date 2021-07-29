@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { NavLink } from './nav-link';
 
 export const Nav = () => {
-  const links = ['Experience', 'Skills', 'Blog', 'Contact'];
+  const links = ['Experience', 'Projects', 'Skills', 'Blog', 'Contact'];
 
   return (
     <nav id="header" className="absolute w-full z-1 top-0">
