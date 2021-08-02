@@ -1,10 +1,21 @@
 import { PortfolioContainer } from '../components/portfolio-container';
-import { Landing } from '../components/portfolio/landing';
+import { ExperienceCard } from '../components/portfolio/experience-card';
 
 export default function Experience() {
   return (
     <PortfolioContainer>
-      <Landing name="Experience" title="I Am Testing!" />
+      <div className="relative grid items-center h-screen top-24 overflow-y-auto">
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+        <ExperienceCard />
+      </div>
     </PortfolioContainer>
   );
 }
