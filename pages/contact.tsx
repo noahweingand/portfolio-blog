@@ -1,10 +1,12 @@
 import { PortfolioContainer } from '../components/portfolio-container';
-import { Landing } from '../components/portfolio/landing';
+import { ContactForm } from '../components/portfolio/contact-form';
 
 export default function Contact() {
   return (
     <PortfolioContainer>
-      <Landing name="Contact" title="I Am Testing!" />
+      <div className="relative flex justify-center h-screen top-28 overflow-hidden">
+        <ContactForm />
+      </div>
     </PortfolioContainer>
   );
 }
