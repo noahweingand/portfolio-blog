@@ -15,8 +15,8 @@ export const ExperienceCard = () => {
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img
-            className="h-full w-full pr-2 object-fit md:object-contain md:w-32 md:h-48"
-            src="/tahzoo_logo.png"
+            className="h-full w-full pt-6 md:pr-2 sm:pr-0 object-fit md:object-contain md:w-32 md:h-32"
+            src="/costar_logo.png"
             alt="placeholder"
           />
         </div>
