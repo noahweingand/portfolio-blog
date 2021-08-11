@@ -10,7 +10,7 @@ between cats and humans.`;
 export default function Experience() {
   return (
     <PortfolioContainer>
-      <div className="relative grid items-center h-screen top-24">
+      <div className="relative w-full h-5/6 justify-center top-24 overflow-y-auto">
         <ExperienceCard
           company="CoStar Group, Inc."
           title="Associate Software Engineer"
