@@ -1,19 +1,20 @@
 import Link from 'next/link';
 import { NavLink } from './nav-link';
+import { useStickyHeaderScript } from '../../../hooks/header';
 
 export const Nav = () => {
+  useStickyHeaderScript();
+
   const links = ['Experience', 'Projects', 'Skills', 'Blog', 'Contact'];
 
   return (
     <nav id="header" className="absolute w-full z-1 top-0">
       <div className="w-full md:max-w-6xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
-        <div className="pl-4">
-          <Link href="/">
-            <a className="text-white text-base no-underline hover:no-underline font-extrabold text-2xl">
-              nowein.dev
-            </a>
-          </Link>
-        </div>
+        <Link href="/">
+          <a className="text-white text-base no-underline hover:no-underline font-extrabold text-2xl">
+            nowein.dev
+          </a>
+        </Link>
 
         <div className="block lg:hidden pr-4">
           <button

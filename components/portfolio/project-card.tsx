@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
 }) => {
   return (
-    <div className="max-w-md mx-auto mb-8 px-4 bg-white rounded-xl shadow-md md:max-w-4xl">
+    <div className="max-w-md w-full mx-auto mb-8 px-4 bg-white rounded-xl shadow-md md:max-w-4xl">
       <div className="md:flex">
         <div className="pt-8 pr-4 pb-8 pl-2">
           <div className="uppercase tracking-wide font-semibold">{title}</div>
