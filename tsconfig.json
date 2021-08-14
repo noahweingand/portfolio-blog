@@ -14,6 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "hooks/header.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "hooks/header-progress-hook.js"],
   "exclude": ["node_modules"]
 }

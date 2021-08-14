@@ -1,7 +1,9 @@
-import { useStickyHeaderScript } from '../../hooks/header';
+import { useNavProgressBarHook } from '../../hooks/header-progress-hook';
+import { useNavCollapseHook } from '../../hooks/header-collapse-hook';
 
 export const Nav = () => {
-  useStickyHeaderScript();
+  useNavProgressBarHook();
+  useNavCollapseHook();
 
   return (
     <nav id="header" className="fixed w-full z-10 top-0">
