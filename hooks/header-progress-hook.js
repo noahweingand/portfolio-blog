@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 /* Progress bar */
 //Source: https://alligator.io/js/progress-bar-javascript-css-variables/
-export const useStickyHeaderScript = () => {
+export const useNavProgressBarHook = () => {
   useEffect(() => {
     var h = document.documentElement,
       b = document.body,
@@ -33,10 +33,5 @@ export const useStickyHeaderScript = () => {
         navcontent.classList.add('bg-gray-100');
       }
     });
-
-    //Javascript to toggle the menu
-    document.getElementById('nav-toggle').onclick = function () {
-      document.getElementById('nav-content').classList.toggle('hidden');
-    };
   }, []);
 };
