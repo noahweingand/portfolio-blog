@@ -1,5 +1,5 @@
 import { PortfolioContainer } from '../components/portfolio-container';
-import { ExperienceCard } from '../components/portfolio/experience-card';
+import { ExperienceCard } from '../components/portfolio';
 
 const testDescription = `According to a study, it has been proven that there is a tight bond between cats and
 humans. According to a study, it has been proven that there is a tight bond between cats

@@ -1,5 +1,5 @@
 import { PortfolioContainer } from '../components/portfolio-container';
-import { ProjectCard } from '../components/portfolio/project-card';
+import { ProjectCard } from '../components/portfolio';
 
 const testProjects = [
   {

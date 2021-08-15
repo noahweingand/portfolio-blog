@@ -1,5 +1,5 @@
 import { PortfolioContainer } from '../components/portfolio-container';
-import { ContactForm } from '../components/portfolio/contact-form';
+import { ContactForm } from '../components/portfolio';
 
 export default function Contact() {
   return (
