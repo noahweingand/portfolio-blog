@@ -16,7 +16,7 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
         <meta name="description" content="description here" />
         <meta name="keywords" content="keywords,here" />
       </Head>
-      <body>
+      <main>
         <div
           className="relative p-0 m-0 overflow-hidden"
           style={{ width: '100vw', height: '100vh' }}
@@ -36,7 +36,7 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
           <Nav />
           {children}
         </div>
-      </body>
+      </main>
     </>
   );
 };

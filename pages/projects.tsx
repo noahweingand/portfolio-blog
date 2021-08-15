@@ -67,9 +67,10 @@ export default function Projects() {
     <PortfolioContainer>
       <div className="relative w-full h-5/6 justify-center top-24 overflow-y-auto">
         <div className="flex flex-wrap">
-          {testProjects.map((project) => {
+          {testProjects.map((project, idx) => {
             return (
               <ProjectCard
+                key={`project-${idx}`}
                 title={project.title}
                 type={project.type}
                 startDate={project.startDate}

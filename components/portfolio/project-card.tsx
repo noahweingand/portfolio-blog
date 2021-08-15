@@ -38,7 +38,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <div className="uppercase tracking-wide font-semibold">{title}</div>
           <div className="grid grid-cols-2 mt-1">
             <p className="block leading-tight text-sm font-medium text-black">{type}</p>
-            <p className="text-gray-500 justify-self-end">{getDateFormat(startDate, endDate)}</p>
+            <div className="text-gray-500 justify-self-end">
+              {getDateFormat(startDate, endDate)}
+            </div>
           </div>
           <div className="mt-2 grid grid-cols-2 justify-item-stretch text-gray-500">
             <p>{techType}</p>
