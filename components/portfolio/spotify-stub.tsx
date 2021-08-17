@@ -34,7 +34,7 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ isPlaying, item }) => {
   );
   return (
     <div className="absolute bottom-0 right-0">
-      <div className="bottom-0 w-full text-white content-end">
+      <div className="bottom-0 w-full text-white text-lg content-end">
         <span>
           {icon}
           <a
@@ -51,7 +51,7 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ isPlaying, item }) => {
           </span>
           <span>
             <a target="_blank" rel="noopener noreferrer" href={item.profileUrl}>
-              <Icon icon={SiSpotify} title={'Spotify'} />
+              <Icon icon={SiSpotify} title={"Noah's Spotify"} />
             </a>
           </span>
         </span>
