@@ -1,11 +1,11 @@
 export type SpotifyTrack = {
   albumImages: string[];
   artists: string[];
-  external_url: string[];
+  externalUrl: string[];
   name: string;
 };
 
 export type SpotifyItem = {
-  is_playing?: boolean;
+  isPlaying?: boolean;
   item: SpotifyTrack;
 };

@@ -27,11 +27,11 @@ export const mapRecentSpotifyItem = (items: any): SpotifyItem => {
   const { album, artists, external_urls, name } = track;
 
   return {
-    is_playing: false,
+    isPlaying: false,
     item: {
       albumImages: getAlbumImages(album?.images),
       artists: getArtistNames(artists),
-      external_url: external_urls?.spotify,
+      externalUrl: external_urls?.spotify,
       name: name,
     },
   };
@@ -42,11 +42,11 @@ export const mapCurrentSpotifyItem = (items: any): SpotifyItem => {
   const { album, artists, external_urls, name } = item;
 
   return {
-    is_playing: is_playing,
+    isPlaying: is_playing,
     item: {
       albumImages: getAlbumImages(album?.images),
       artists: getArtistNames(artists),
-      external_url: external_urls?.spotify,
+      externalUrl: external_urls?.spotify,
       name: name,
     },
   };
