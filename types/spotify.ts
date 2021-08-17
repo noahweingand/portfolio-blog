@@ -1,8 +1,9 @@
 export type SpotifyTrack = {
   albumImages: string[];
   artists: string[];
-  externalUrl: string[];
+  externalUrl: string;
   name: string;
+  profileUrl: string;
 };
 
 export type SpotifyItem = {

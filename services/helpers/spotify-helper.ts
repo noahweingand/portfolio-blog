@@ -10,6 +10,8 @@ type artists = {
   name: string;
 };
 
+const SPOTIFY_PROFILE_URL = 'https://open.spotify.com/user/noahweingand';
+
 const getAlbumImages = (images: albumImages[]): string[] => {
   const ret: string[] = [];
   images.forEach((image) => ret.push(image.url));
@@ -33,6 +35,7 @@ export const mapRecentSpotifyItem = (items: any): SpotifyItem => {
       artists: getArtistNames(artists),
       externalUrl: external_urls?.spotify,
       name: name,
+      profileUrl: SPOTIFY_PROFILE_URL,
     },
   };
 };
@@ -48,6 +51,7 @@ export const mapCurrentSpotifyItem = (items: any): SpotifyItem => {
       artists: getArtistNames(artists),
       externalUrl: external_urls?.spotify,
       name: name,
+      profileUrl: SPOTIFY_PROFILE_URL,
     },
   };
 };
