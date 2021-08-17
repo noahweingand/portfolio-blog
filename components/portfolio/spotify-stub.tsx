@@ -28,9 +28,9 @@ const Icon = ({ icon, title }: { icon: IconType; title: string }) => {
 
 export const SpotifyStub: React.FC<SpotifyItem> = ({ isPlaying, item }) => {
   const icon = isPlaying ? (
-    <span className="bg-green-500 h-2 w-2 animate-pulse mr-2 rounded-full inline-block"></span>
+    <span className="bg-green-500 h-2 w-2 animate-pulse mr-2 mb-0.5 rounded-full inline-block"></span>
   ) : (
-    <span className="bg-red-500 h-2 w-2 animate-pulse mr-2 rounded-full inline-block"></span>
+    <span className="bg-red-500 h-2 w-2 animate-pulse mr-2 mb-0.5 rounded-full inline-block"></span>
   );
   return (
     <div className="absolute bottom-0 right-0">
