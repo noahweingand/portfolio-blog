@@ -21,7 +21,7 @@ async function getAccessToken(): Promise<string> {
       }),
     });
 
-    const { access_token } = await authReq.json();
+    const { access_token }: { access_token: string } = await authReq.json();
 
     return access_token;
   } catch (err) {
