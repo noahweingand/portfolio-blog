@@ -23,7 +23,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   altImageText,
 }) => {
   return (
-    <div className="max-w-md mx-auto mb-14 px-4 bg-white rounded-xl shadow-md md:max-w-4xl">
+    <div className="max-w-md mx-auto mb-16 px-4 bg-white rounded-xl shadow-md md:max-w-4xl">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img

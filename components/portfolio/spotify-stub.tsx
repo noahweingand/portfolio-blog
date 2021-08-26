@@ -33,7 +33,7 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ isPlaying, item }) => {
     <span className="bg-red-500 h-2 w-2 animate-pulse mr-2 mb-0.5 rounded-full inline-block"></span>
   );
   return (
-    <div className="absolute bottom-0 right-0">
+    <div className="absolute bottom-0 right-2">
       <div className="bottom-0 w-full text-white text-lg content-end">
         <span>
           {icon}
