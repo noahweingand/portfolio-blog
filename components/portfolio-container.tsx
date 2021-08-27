@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import { Nav } from './portfolio/index';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 type PortfolioProps = {
   children: React.ReactNode;
@@ -22,6 +24,7 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
           style={{ width: '100vw', height: '100vh' }}
         >
           <div className="fixed w-full h-screen min-h-screen bg-cover bg-center bg-fixed">
+            <ToastContainer />
             <video
               autoPlay
               loop
