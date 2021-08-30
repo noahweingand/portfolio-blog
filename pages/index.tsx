@@ -1,6 +1,9 @@
+// Components
 import { PortfolioContainer } from '../components/portfolio-container';
 import { Landing } from '../components/portfolio';
-import { getCurrentSpotifySong } from '../services/spotify';
+// Services
+import fetch from 'node-fetch';
+// Types
 import { SpotifyItem } from '../types/spotify';
 
 export default function Home({ data }: { data: SpotifyItem }) {
@@ -12,7 +15,9 @@ export default function Home({ data }: { data: SpotifyItem }) {
 }
 
 export async function getServerSideProps() {
-  const data = await getCurrentSpotifySong();
+  const res = await fetch('http://localhost:3000/api/spotify');
+  const { data } = await res.json();
+
   return {
     props: {
       data,
