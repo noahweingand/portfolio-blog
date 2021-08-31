@@ -6,6 +6,8 @@ import fetch from 'node-fetch';
 // Types
 import { SpotifyItem } from '../types/spotify';
 
+const APP_URL = process.env.APP_URL;
+
 export default function Home({ data }: { data: SpotifyItem }) {
   return (
     <PortfolioContainer>
@@ -15,7 +17,7 @@ export default function Home({ data }: { data: SpotifyItem }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:3000/api/spotify');
+  const res = await fetch(`${APP_URL}/api/spotify`);
   const { data } = await res.json();
 
   return {
