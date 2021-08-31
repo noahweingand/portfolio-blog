@@ -11,6 +11,7 @@ type ExperienceCardProps = {
   imagePath: string;
   altImageText: string;
 };
+
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   company,
   title,
@@ -42,7 +43,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
           </div>
           <div className="mt-2 grid grid-cols-2 justify-item-stretch text-gray-500">
             <p>{status}</p>
-            <p className=" justify-self-end">{location}</p>
+            <p className="justify-self-end">{location}</p>
           </div>
           <p className="mt-2 text-gray-500">{description}</p>
         </div>
