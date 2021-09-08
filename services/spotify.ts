@@ -12,7 +12,8 @@ export async function getAccessToken(): Promise<string> {
       method: 'POST',
       headers: {
         Authorization:
-          'Basic ' + new Buffer(SPOTIFY_CLIENT_ID + ':' + SPOTIFY_CLIENT_SECRET).toString('base64'),
+          'Basic ' +
+          Buffer.from(SPOTIFY_CLIENT_ID + ':' + SPOTIFY_CLIENT_SECRET).toString('base64'),
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: new URLSearchParams({
