@@ -67,8 +67,9 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ item, isPlaying }) => {
             href={song.externalUrl}
           >
             <span className="font-bold">{song.name}</span>
-          </a>{' '}
-          by{' '}
+          </a>
+          {'   '}
+          by {'   '}
           <span className="font-bold">
             {renderArtists(song.artists, song.name)} {'    '}
           </span>
