@@ -15,5 +15,9 @@ export const Icon = ({
   className: string;
   color?: string | undefined;
 }) => {
-  return <Tooltip title={title}>{icon({ className: className, size: size, fill: color })}</Tooltip>;
+  return (
+    <Tooltip position="top" title={title}>
+      {icon({ className: className, size: size, fill: color })}
+    </Tooltip>
+  );
 };
