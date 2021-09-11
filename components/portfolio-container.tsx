@@ -14,9 +14,12 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <title>nowein.dev</title>
-        <meta name="author" content="name" />
-        <meta name="description" content="description here" />
-        <meta name="keywords" content="keywords,here" />
+        <meta name="author" content="Noah Weingand" />
+        <meta name="description" content="Noah Weingand's professional portfolio" />
+        <meta
+          name="keywords"
+          content="nowein,Noah,Weingand,portfolio,projects,technology,tech,coding,programming"
+        />
       </Head>
       <main>
         <div
