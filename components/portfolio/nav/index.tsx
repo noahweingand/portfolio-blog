@@ -11,9 +11,11 @@ export const Nav = () => {
     <nav id="header" className="absolute w-full z-1 top-0">
       <div className="w-full md:max-w-6xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
         <Link href="/">
-          <a className="text-white text-base no-underline hover:no-underline font-extrabold text-2xl">
-            nowein.dev
-          </a>
+          <div className="pl-4">
+            <a className="text-white text-base no-underline hover:no-underline font-extrabold text-2xl">
+              nowein.dev
+            </a>
+          </div>
         </Link>
 
         <div className="block lg:hidden pr-4">
