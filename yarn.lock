@@ -2958,6 +2958,11 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-aws-icons@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-aws-icons/-/react-aws-icons-1.2.1.tgz#79bd3e3bd2089bc38c7dc1b05bdc592b6d59b4dc"
+  integrity sha512-32j+P7ZKbQsreL44fAqKYlg5Cn5d1ivFO/2q7yKcKsgyx0QiFjmQxyb5mp19jBNNk5Ux57tfUvWpEMmRzboxPA==
+
 react-dom@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
