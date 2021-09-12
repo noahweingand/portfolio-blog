@@ -17,10 +17,20 @@ export const Landing: React.FC<HomeProps> = ({ name, title, data }) => {
         <h1 className="flex mb-16 text-7xl font-semibold">{name}</h1>
         <h3 className="flex justify-center text-2xl">{title}</h3>
         <div className="flex justify-around items-center pt-16">
-          <a className="flex" target="_blank" rel="noopener noreferrer" href={'test'}>
+          <a
+            className="flex"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={'https://github.com/noahweingand'}
+          >
             <Icon icon={AiFillGithub} title="Github" size="4em" className={''} color={'white'} />
           </a>
-          <a className="flex" target="_blank" rel="noopener noreferrer" href={'test'}>
+          <a
+            className="flex"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={'https://linkedin.com/in/noahweingand'}
+          >
             <Icon
               icon={AiFillLinkedin}
               title="LinkedIn"
@@ -29,7 +39,12 @@ export const Landing: React.FC<HomeProps> = ({ name, title, data }) => {
               color={'white'}
             />
           </a>
-          <a className="flex" target="_blank" rel="noopener noreferrer" href={'test'}>
+          <a
+            className="flex"
+            target="_blank"
+            rel="noopener noreferrer"
+            href={'noah_weingand_resume.pdf'}
+          >
             <Icon icon={TiDocumentText} title="Resume" size="4em" className={''} color={'white'} />
           </a>
         </div>
