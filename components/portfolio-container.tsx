@@ -1,13 +1,42 @@
 import Head from 'next/head';
 import { Nav } from './portfolio/index';
 import { ToastContainer } from 'react-toastify';
+import { UserAgent, useUserAgent } from 'next-useragent';
 import 'react-toastify/dist/ReactToastify.css';
 
 type PortfolioProps = {
   children: React.ReactNode;
+  background?: string;
+  userAgent?: string;
 };
 
-export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
+export const getBackground = (ua: UserAgent, background?: string) => {
+  return ua.isMobile ? (
+    <img
+      src={background}
+      className="filter blur-lg top-0 left-0 w-full h-full object-cover z-0"
+    ></img>
+  ) : (
+    <video
+      autoPlay
+      loop
+      muted={true}
+      preload="true"
+      playsInline={true}
+      className="top-0 left-0 w-full h-full object-cover z-0"
+    >
+      <source src="/coding.mov" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  );
+};
+
+export const PortfolioContainer: React.FC<PortfolioProps> = ({
+  children,
+  background,
+  userAgent,
+}) => {
+  const ua = useUserAgent(userAgent ?? '');
   return (
     <>
       <Head>
@@ -28,16 +57,7 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({ children }) => {
         >
           <div className="fixed w-full h-screen min-h-screen bg-cover bg-center bg-fixed">
             <ToastContainer />
-            <video
-              autoPlay
-              loop
-              muted
-              preload="true"
-              className="top-0 left-0 w-full h-full object-cover z-0"
-            >
-              <source src="/coding.mov" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            {getBackground(ua, background)}
           </div>
           <Nav />
           {children}
