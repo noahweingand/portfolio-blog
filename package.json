@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "11.0.1",
+    "next-useragent": "^2.6.0",
     "node-fetch": "^2.6.1",
     "react": "17.0.2",
     "react-aws-icons": "^1.2.1",
