@@ -8,7 +8,7 @@ export const Nav = () => {
   const links = ['Experience', 'Projects', 'Skills', 'Blog', 'Contact'];
 
   return (
-    <nav id="header" className="absolute w-full z-1 top-0">
+    <nav id="header" className="absolute w-full z-20 top-0">
       <div className="w-full md:max-w-6xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
         <div className="pl-4">
           <Link href="/">
@@ -21,7 +21,7 @@ export const Nav = () => {
         <div className="block lg:hidden pr-4">
           <button
             id="nav-toggle"
-            className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none"
+            className="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-white-500 appearance-none focus:outline-none"
           >
             <svg
               className="fill-current h-3 w-3"
@@ -35,7 +35,7 @@ export const Nav = () => {
         </div>
 
         <div
-          className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 md:bg-transparent z-20"
+          className="w-full flex-grow flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 sm:bg-transparent z-20"
           id="nav-content"
         >
           <ul className="list-reset lg:flex justify-end flex-1 items-center">

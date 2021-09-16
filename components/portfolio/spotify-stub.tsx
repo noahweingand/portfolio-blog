@@ -34,6 +34,10 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ item, isPlaying }) => {
   const [playing, setPlaying] = useState<boolean | undefined>(isPlaying);
 
   useEffect(() => {
+    setSong(song);
+  }, []);
+
+  useEffect(() => {
     setTimeout(() => {
       updateSong();
     }, 15000);
@@ -56,9 +60,9 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ item, isPlaying }) => {
   );
 
   return (
-    <div className="absolute bottom-2 right-2">
-      <div className="bottom-0 w-full text-white text-lg content-end rounded-xl bg-opacity-75 bg-gray-800 pb-1 pt-2 px-4">
-        <span>
+    <div className="absolute bottom-2 right-2 content-end rounded-xl bg-opacity-75 bg-gray-800 pt-2 px-4">
+      <div className="flex bottom-0 w-full text-white text-lg justify-around">
+        <span className="">
           {icon}
           <a
             className="hover:underline"
@@ -73,17 +77,17 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ item, isPlaying }) => {
           <span className="font-bold">
             {renderArtists(song.artists, song.name)} {'    '}
           </span>
-          <span>
-            <a target="_blank" rel="noopener noreferrer" href={song.profileUrl}>
-              <Icon
-                icon={SiSpotify}
-                title="Noah's Resume"
-                size="2em"
-                className="pb-1 inline"
-                color="green"
-              />
-            </a>
-          </span>
+        </span>
+        <span className="pl-2 justify-items-end">
+          <a target="_blank" rel="noopener noreferrer" href={song.profileUrl}>
+            <Icon
+              icon={SiSpotify}
+              title="Noah's Resume"
+              size="2em"
+              className="pb-2 inline"
+              color="green"
+            />
+          </a>
         </span>
       </div>
     </div>
