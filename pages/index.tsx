@@ -20,7 +20,7 @@ export default function Home({ data, userAgent }: { data: SpotifyItem; userAgent
   }, [spotifyData]);
 
   const updateSong = () => {
-    fetch('http://localhost:3000/api/spotify')
+    fetch(`${APP_URL}/api/spotify`)
       .then((res) => res.json())
       .then(({ data }) => {
         setSpotifyData(data);
