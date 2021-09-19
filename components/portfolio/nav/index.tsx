@@ -18,7 +18,7 @@ export const Nav = () => {
           </Link>
         </div>
 
-        <div className="block lg:hidden pr-4">
+        <div className="block md:hidden pr-4">
           <button
             id="nav-toggle"
             className="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-white-900 hover:border-white-500 appearance-none focus:outline-none"
@@ -35,7 +35,7 @@ export const Nav = () => {
         </div>
 
         <div
-          className="w-full flex-grow flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 sm:bg-transparent z-20"
+          className="w-full flex-grow flex md:items-center md:w-auto hidden md:block mt-2 md:mt-0 sm:bg-transparent z-20"
           id="nav-content"
         >
           <ul className="list-reset flex justify-end flex-1 items-center">
