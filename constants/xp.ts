@@ -9,12 +9,10 @@ export const xp = [
     status: 'Full-time',
     location: 'Richmond, VA',
     description: [
-      `According to a study, it has been proven that there is a tight bond between cats and
-      humans. According to a study, it has been proven that there is a tight bond between cats
-      and humans.`,
-      `According to a study, it has been proven that there is a tight bond between cats and
-      humans. According to a study, it has been proven that there is a tight bond between cats
-      and humans.`,
+      `Debugging and developing features for an internal case management software that increased customer support
+      workflows and response time by 40 percent`,
+      `Writing end-to-end tests in Cypress and Typescript to detect regressions in pipelines`,
+      `Maintaining and deploying internal micro-frontends in React, Typescript, Node, and Azure`,
     ],
   },
   {
@@ -27,12 +25,11 @@ export const xp = [
     status: 'Full-time',
     location: 'Richmond, VA',
     description: [
-      `According to a study, it has been proven that there is a tight bond between cats and
-      humans. According to a study, it has been proven that there is a tight bond between cats
-      and humans.`,
-      `According to a study, it has been proven that there is a tight bond between cats and
-      humans. According to a study, it has been proven that there is a tight bond between cats
-      and humans.`,
+      `Developed an e-commerce microservice in Node.js that wraps a client’s GraphQL Magento service handling inventory
+      and customer cart interactions`,
+      `Wrote a microservice in Node.js that locates resellers for ACER hardware utilizing Google Maps API and DynamoDB`,
+      `Engineered a cron job in C# that queries a client’s web service and parses the XML response to be stored in Redis`,
+      `Managed interns in learning the company’s preferred technologies such as .NET, React, and SDL Tridion CMS`,
     ],
   },
   {
@@ -45,12 +42,9 @@ export const xp = [
     status: 'Part-time',
     location: 'Richmond, VA',
     description: [
-      `According to a study, it has been proven that there is a tight bond between cats and
-      humans. According to a study, it has been proven that there is a tight bond between cats
-      and humans.`,
-      `According to a study, it has been proven that there is a tight bond between cats and
-      humans. According to a study, it has been proven that there is a tight bond between cats
-      and humans.`,
+      `Performed a POC for migrating between two AWS RDS instances using Python to generate csv files for MSSQL
+      replication`,
+      `Created an internal social media application in React`,
     ],
   },
   {
