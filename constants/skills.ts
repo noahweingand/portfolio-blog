@@ -24,23 +24,6 @@ import {
   SiApachekafka,
 } from 'react-icons/si';
 
-//@ts-ignore
-import APIGateway from 'react-aws-icons/dist/aws/logo/APIGateway';
-//@ts-ignore
-import Lambda from 'react-aws-icons/dist/aws/logo/APIGateway';
-//@ts-ignore
-import DynamoDB from 'react-aws-icons/dist/aws/logo/DynamoDB';
-//@ts-ignore
-import S3 from 'react-aws-icons/dist/aws/logo/S3';
-//@ts-ignore
-import Route53 from 'react-aws-icons/dist/aws/logo/Route53';
-//@ts-ignore
-import Cloudfront from 'react-aws-icons/dist/aws/logo/CloudFront';
-//@ts-ignore
-import EC2 from 'react-aws-icons/dist/aws/logo/EC2';
-//@ts-ignore
-import RDS from 'react-aws-icons/dist/aws/logo/RDS';
-
 export const languages = [
   {
     name: 'Typescript',
@@ -131,41 +114,6 @@ export const testing = [
   },
   {
     name: 'JUnit',
-  },
-];
-
-export const aws = [
-  {
-    name: 'Lambda',
-    icon: Lambda,
-  },
-  {
-    name: 'API Gateway',
-    icon: APIGateway,
-  },
-  {
-    name: 'DynamoDB',
-    icon: DynamoDB,
-  },
-  {
-    name: 'S3',
-    icon: S3,
-  },
-  {
-    name: 'EC2',
-    icon: EC2,
-  },
-  {
-    name: 'RDS',
-    icon: RDS,
-  },
-  {
-    name: 'Route53',
-    icon: Route53,
-  },
-  {
-    name: 'Cloudfront',
-    icon: Cloudfront,
   },
 ];
 
