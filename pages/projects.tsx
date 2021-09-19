@@ -13,7 +13,7 @@ import { GetServerSidePropsContext } from 'next';
 export default function Projects({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
   return (
     <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
-      <div className="relative w-full h-5/6 justify-center top-24 overflow-y-auto">
+      <div className="relative w-full px-4 h-5/6 justify-center top-24 overflow-y-auto">
         <div className="flex flex-wrap">
           {projects.map((project, idx) => {
             return (
