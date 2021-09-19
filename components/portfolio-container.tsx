@@ -14,7 +14,7 @@ export const getBackground = (ua: UserAgent, background?: string) => {
   return ua.isMobile ? (
     <img
       src={background}
-      className="filter blur-lg top-0 left-0 w-full h-full object-cover z-0"
+      className="filter blur-sm brightness-75 top-0 left-0 w-full h-full object-cover z-0"
     ></img>
   ) : (
     <video
@@ -37,6 +37,7 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({
   userAgent,
 }) => {
   const ua = useUserAgent(userAgent ?? '');
+
   return (
     <>
       <Head>

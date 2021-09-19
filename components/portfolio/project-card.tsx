@@ -49,18 +49,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </div>
           </div>
           <p className="mt-2 text-gray-500">
-            <a className="hover:underline" href={link}>
+            <a className="underline hover:no-underline" href={link}>
               View on Github
             </a>
           </p>
           <p className="mt-4 text-gray-500">{description}</p>
-          {/* <p className="mt-2 pl-4 text-gray-500">
-            <ul className="list-disc">
-              {descriptions.map((desc) => {
-                return <li>{desc}</li>;
-              })}
-            </ul>
-          </p> */}
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ type ExperienceCardProps = {
   endDate: string;
   status: string;
   location: string;
-  description: string;
+  descriptions: string[];
   imagePath: string;
   altImageText: string;
 };
@@ -19,7 +19,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   endDate,
   status,
   location,
-  description,
+  descriptions,
   imagePath,
   altImageText,
 }) => {
@@ -33,7 +33,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
             alt={altImageText}
           />
         </div>
-        <div className="pt-8 pr-4 pb-8 pl-2">
+        <div className="flex-grow pt-8 pr-4 pb-8 pl-2">
           <div className="uppercase tracking-wide text-sm font-semibold">{company}</div>
           <div className="grid grid-cols-2 mt-1">
             <p className="block text-lg leading-tight font-medium text-black">{title}</p>
@@ -45,7 +45,11 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
             <p>{status}</p>
             <p className="justify-self-end">{location}</p>
           </div>
-          <p className="mt-2 text-gray-500">{description}</p>
+          <ul className="mt-2 text-gray-500 list-disc">
+            {descriptions.map((desc, idx) => {
+              return <li key={`${title}-${idx}`}>{desc}</li>;
+            })}
+          </ul>
         </div>
       </div>
     </div>

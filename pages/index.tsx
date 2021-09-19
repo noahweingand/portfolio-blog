@@ -12,7 +12,7 @@ const APP_URL = process.env.APP_URL;
 export default function Home({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
   return (
     <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
-      <Landing name="Noah Weingand" title="Full Stack Engineer" data={data} />
+      <Landing name="Noah Weingand" title="Web Engineer" data={data} />
     </PortfolioContainer>
   );
 }

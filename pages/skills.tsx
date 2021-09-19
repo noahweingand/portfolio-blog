@@ -1,5 +1,8 @@
+// Components
 import { PortfolioContainer } from '../components/portfolio-container';
 import { SkillCard } from '../components/portfolio/skill-card';
+
+// Constants
 import { languages, frameworks, databases, testing, general } from '../constants/skills';
 
 export default function Skills() {
