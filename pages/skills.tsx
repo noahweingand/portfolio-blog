@@ -19,7 +19,7 @@ export default function Skills({ data, userAgent }: { data: SpotifyItem; userAge
     <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
       <div className="relative w-full px-4 h-5/6 justify-center top-24 overflow-y-auto">
         <SkillCard domain={'Languages'} skills={languages} isMobile={ua.isMobile} />
-        <SkillCard domain={'Frameworks'} skills={frameworks} isMobile={ua.isMobile} />
+        <SkillCard domain={'Libraries & Frameworks'} skills={frameworks} isMobile={ua.isMobile} />
         <SkillCard domain={'Databases'} skills={databases} isMobile={ua.isMobile} />
         <SkillCard domain={'Testing'} skills={testing} isMobile={ua.isMobile} />
         <SkillCard domain={'General'} skills={general} isMobile={ua.isMobile} />
