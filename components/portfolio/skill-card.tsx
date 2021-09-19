@@ -16,7 +16,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ domain, skills, isMobile }
     <div className="max-w-md mx-auto mb-16 px-4 bg-white rounded-xl shadow-md md:max-w-4xl">
       <div className="pt-8 pr-4 pb-8 pl-2">
         <h1 className="flex font-semibold text-lg">{domain}</h1>
-        <div className="pt-8">
+        <div className="pt-12">
           <ul className="flex flex-wrap text-md list-disc list-inside inline justify-around items-center">
             {skills.map((skill, idx) => {
               return !!skill.icon ? (
