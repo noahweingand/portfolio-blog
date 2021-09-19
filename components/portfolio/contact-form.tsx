@@ -117,15 +117,13 @@ export const ContactForm = () => {
           <p className="text-gray-600 text-xs italic">Some tips - as long as needed</p>
         </div>
       </div>
-      <div className="md:flex md:items-center justify-end">
-        <div className="justify-end">
-          <button
-            className="shadow bg-blue-600 hover:bg-transparent focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-            type="submit"
-          >
-            Send
-          </button>
-        </div>
+      <div className="md:flex justify-end">
+        <button
+          className="shadow bg-blue-600 hover:bg-transparent focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+          type="submit"
+        >
+          Send
+        </button>
       </div>
     </form>
   );

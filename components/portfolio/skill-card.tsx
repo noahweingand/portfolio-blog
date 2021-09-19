@@ -19,7 +19,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ domain, skills }) => {
           <ul className="flex text-md list-disc list-inside inline justify-around items-center">
             {skills.map((skill, idx) => {
               return !!skill.icon ? (
-                <div key={idx} className="flex justify-around">
+                <div key={idx} className="flex md: pr-4">
                   <Icon
                     icon={skill.icon}
                     title={skill.name}
