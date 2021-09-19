@@ -1,13 +1,18 @@
 // Components
 import { PortfolioContainer } from '../components/portfolio-container';
 import { ProjectCard } from '../components/portfolio';
-
 // Constants
 import { projects } from '../constants/projects';
+import { APP_URL } from '../constants/env';
+// Services
+import fetch from 'node-fetch';
+// Types
+import { SpotifyItem } from '../types/spotify';
+import { GetServerSidePropsContext } from 'next';
 
-export default function Projects() {
+export default function Projects({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
   return (
-    <PortfolioContainer>
+    <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
       <div className="relative w-full h-5/6 justify-center top-24 overflow-y-auto">
         <div className="flex flex-wrap">
           {projects.map((project, idx) => {
@@ -29,4 +34,16 @@ export default function Projects() {
       </div>
     </PortfolioContainer>
   );
+}
+
+export async function getServerSideProps(context: GetServerSidePropsContext) {
+  const res = await fetch(`${APP_URL}/api/spotify`);
+  const { data } = await res.json();
+
+  return {
+    props: {
+      data,
+      userAgent: context?.req?.headers['user-agent'],
+    },
+  };
 }

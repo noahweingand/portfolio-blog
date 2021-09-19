@@ -1,18 +1,36 @@
+import { useState, useEffect } from 'react';
 // Components
 import { PortfolioContainer } from '../components/portfolio-container';
 import { Landing } from '../components/portfolio';
+// Constants
+import { APP_URL } from '../constants/env';
 // Services
 import fetch from 'node-fetch';
 // Types
 import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
 
-const APP_URL = process.env.APP_URL;
-
 export default function Home({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
+  const [spotifyData, setSpotifyData] = useState<SpotifyItem>(data);
+
+  useEffect(() => {
+    setTimeout(() => {
+      updateSong();
+    }, 15000);
+  }, [spotifyData]);
+
+  const updateSong = () => {
+    fetch('http://localhost:3000/api/spotify')
+      .then((res) => res.json())
+      .then(({ data }) => {
+        setSpotifyData(data);
+      })
+      .catch((e) => console.log(e));
+  };
+
   return (
-    <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
-      <Landing name="Noah Weingand" title="Web Engineer" data={data} />
+    <PortfolioContainer background={spotifyData.item.albumImages[0]} userAgent={userAgent}>
+      <Landing name="Noah Weingand" title="Web Engineer" data={spotifyData} />
     </PortfolioContainer>
   );
 }
