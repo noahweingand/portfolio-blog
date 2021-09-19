@@ -1,10 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import fetch from 'node-fetch';
-
-const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-const EMAILJS_USER_ID = process.env.EMAILJS_USER_ID;
-const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-const EMAILJS_ACCESS_TOKEN = process.env.EMAILJS_ACCESS_TOKEN;
+import {
+  EMAILJS_SERVICE_ID,
+  EMAILJS_USER_ID,
+  EMAILJS_TEMPLATE_ID,
+  EMAILJS_ACCESS_TOKEN,
+} from '../../constants/env';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   const { firstName, lastName, email, message } = JSON.parse(req.body);

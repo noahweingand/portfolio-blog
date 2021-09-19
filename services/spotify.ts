@@ -1,10 +1,7 @@
 import fetch from 'node-fetch';
 import { SpotifyItem } from '../types/spotify';
 import { mapCurrentSpotifyItem, mapRecentSpotifyItem } from './helpers/spotify-helper';
-
-const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
-const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
-const SPOTIFY_REFRESH_TOKEN = process.env.SPOTIFY_REFRESH_TOKEN;
+import { SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REFRESH_TOKEN } from '../constants/env';
 
 export async function getAccessToken(): Promise<string> {
   try {
