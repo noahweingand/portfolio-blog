@@ -45,7 +45,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
             <p>{status}</p>
             <p className="justify-self-end">{location}</p>
           </div>
-          <ul className="mt-2 text-gray-500 list-disc">
+          <ul className="pt-4 mt-2 text-gray-500 list-disc">
             {descriptions.map((desc, idx) => {
               return <li key={`${title}-${idx}`}>{desc}</li>;
             })}
