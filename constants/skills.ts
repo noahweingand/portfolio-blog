@@ -22,6 +22,7 @@ import {
   SiYarn,
   SiDocker,
   SiApachekafka,
+  SiAmazonaws,
 } from 'react-icons/si';
 
 export const languages = [
@@ -121,6 +122,10 @@ export const general = [
   {
     name: 'Git',
     icon: SiGit,
+  },
+  {
+    name: 'AWS',
+    icon: SiAmazonaws,
   },
   {
     name: 'GraphQL',
