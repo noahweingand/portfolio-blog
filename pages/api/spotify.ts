@@ -10,7 +10,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
   } catch (e) {
     res.status(400).json({
-      data: e.message,
+      data: 'Spotify call failed.',
     });
   }
 }

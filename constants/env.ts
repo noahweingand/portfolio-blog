@@ -1,4 +1,4 @@
-export const APP_URL = process.env.APP_URL;
+export const APP_URL = process.env.NEXT_PUBLIC_APP_URL;
 export const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
 export const EMAILJS_USER_ID = process.env.EMAILJS_USER_ID;
 export const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
