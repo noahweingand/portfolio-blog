@@ -5,7 +5,7 @@ import { Landing } from '../components/portfolio';
 // Constants
 import { APP_URL } from '../constants/env';
 // Services
-import fetch from 'node-fetch';
+import { getCurrentSpotifySong } from '../services/spotify';
 // Types
 import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
@@ -20,7 +20,7 @@ export default function Home({ data, userAgent }: { data: SpotifyItem; userAgent
   }, [spotifyData]);
 
   const updateSong = () => {
-    fetch(`${APP_URL}/api/spotify`)
+    fetch('/api/spotify')
       .then((res) => res.json())
       .then(({ data }) => {
         setSpotifyData(data);
