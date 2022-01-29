@@ -4,8 +4,6 @@ import { PortfolioContainer } from '../components/portfolio-container';
 import { Landing } from '../components/portfolio';
 // Constants
 import { APP_URL } from '../constants/env';
-// Services
-import { getCurrentSpotifySong } from '../services/spotify';
 // Types
 import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
