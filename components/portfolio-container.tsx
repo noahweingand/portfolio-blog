@@ -14,6 +14,7 @@ export const getBackground = (ua: UserAgent, background?: string) => {
   return ua.isMobile ? (
     <img
       src={background}
+      alt="Spotify song album art"
       className="filter blur-sm brightness-75 top-0 left-0 w-full h-full object-cover z-0"
     ></img>
   ) : (
