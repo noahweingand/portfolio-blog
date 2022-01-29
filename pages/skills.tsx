@@ -12,11 +12,11 @@ import fetch from 'node-fetch';
 import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
 
-export default function Skills({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
+export default function Skills({ data, userAgent }: { data: string; userAgent: string }) {
   const ua = useUserAgent(userAgent ?? '');
 
   return (
-    <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
+    <PortfolioContainer background={data} userAgent={userAgent}>
       <div className="relative w-full px-4 h-5/6 justify-center top-24 overflow-y-auto">
         <SkillCard domain={'Languages'} skills={languages} isMobile={ua.isMobile} />
         <SkillCard domain={'Libraries & Frameworks'} skills={frameworks} isMobile={ua.isMobile} />
@@ -29,7 +29,7 @@ export default function Skills({ data, userAgent }: { data: SpotifyItem; userAge
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const res = await fetch(`${APP_URL}/api/spotify`);
+  const res = await fetch(`${APP_URL}/api/album-image`);
   const { data } = await res.json();
 
   return {

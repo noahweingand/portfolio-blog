@@ -8,9 +8,9 @@ import { APP_URL } from '../constants/env';
 import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
 
-export default function Experience({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
+export default function Experience({ data, userAgent }: { data: string; userAgent: string }) {
   return (
-    <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
+    <PortfolioContainer background={data} userAgent={userAgent}>
       <div className="relative px-4 w-full h-5/6 justify-center top-24 overflow-y-auto">
         {xp.map((xp, idx) => {
           return (
@@ -34,7 +34,7 @@ export default function Experience({ data, userAgent }: { data: SpotifyItem; use
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const res = await fetch(`${APP_URL}/api/spotify`);
+  const res = await fetch(`${APP_URL}/api/album-image`);
   const { data } = await res.json();
 
   return {

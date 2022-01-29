@@ -9,9 +9,9 @@ import fetch from 'node-fetch';
 import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
 
-export default function Contact({ data, userAgent }: { data: SpotifyItem; userAgent: string }) {
+export default function Contact({ data, userAgent }: { data: string; userAgent: string }) {
   return (
-    <PortfolioContainer background={data.item.albumImages[0]} userAgent={userAgent}>
+    <PortfolioContainer background={data} userAgent={userAgent}>
       <div className="relative flex justify-center h-screen top-28 overflow-hidden">
         <ContactForm />
       </div>
@@ -20,7 +20,7 @@ export default function Contact({ data, userAgent }: { data: SpotifyItem; userAg
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const res = await fetch(`${APP_URL}/api/spotify`);
+  const res = await fetch(`${APP_URL}/api/album-image`);
   const { data } = await res.json();
 
   return {
