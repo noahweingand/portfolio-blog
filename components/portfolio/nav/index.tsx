@@ -12,7 +12,10 @@ export const Nav = () => {
       <div className="w-full md:max-w-6xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
         <div className="pl-4">
           <Link href="/">
-            <a className="text-white text-base no-underline hover:text-gray-900 font-extrabold text-2xl">
+            <a
+              className="text-white text-base no-underline hover:text-gray-900 font-extrabold text-2xl"
+              aria-label="Home"
+            >
               nowein.dev
             </a>
           </Link>

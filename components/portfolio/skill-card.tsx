@@ -24,6 +24,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ domain, skills, isMobile }
                 <div key={skill.id} className="flex md:pr-4">
                   <Icon
                     icon={skill.icon}
+                    text={skill.name}
                     title={skill.name}
                     size={isMobile ? '2em' : '3em'}
                     className=""

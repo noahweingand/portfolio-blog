@@ -1,5 +1,6 @@
 // Components
 import { SiSpotify } from 'react-icons/si';
+import { Link } from '../general';
 import { Icon } from './icon';
 // Types
 import { SpotifyItem } from '../../types/spotify';
@@ -37,14 +38,9 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ item, isPlaying }) => {
       <div className="flex bottom-0 w-full text-white text-lg justify-around">
         <span className="flex">
           {isPlayingIcon}
-          <a
-            className="hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-            href={item.externalUrl}
-          >
+          <Link className="hover:underline" href={item.externalUrl}>
             <span className="font-bold pr-1">{item.name}</span>
-          </a>
+          </Link>
           <span className="hidden md:block">
             {'   '}
             by {'   '}
@@ -54,15 +50,16 @@ export const SpotifyStub: React.FC<SpotifyItem> = ({ item, isPlaying }) => {
           </span>
         </span>
         <span className="pl-2 justify-items-end">
-          <a target="_blank" rel="noopener noreferrer" href={item.profileUrl}>
+          <Link href={item.profileUrl} aria-label="Spotify profile">
             <Icon
               icon={SiSpotify}
-              title="Noah's Resume"
+              text="Noah's Spotify"
+              title="Spotify logo"
               size="2em"
               className="pb-2 inline"
               color="green"
             />
-          </a>
+          </Link>
         </span>
       </div>
     </div>
