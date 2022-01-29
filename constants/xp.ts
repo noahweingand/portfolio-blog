@@ -3,16 +3,16 @@ export const xp = [
     company: 'CoStar Group, Inc.',
     title: 'Associate Software Engineer',
     imagePath: '/experience/costar_logo.png',
-    altImageText: 'CoStar Group, Inc. logo',
+    altImageText: 'CoStar Group logo',
     startDate: 'June 2021',
     endDate: 'Present',
     status: 'Full-time',
     location: 'Richmond, VA',
     description: [
-      `Debugging and developing features for an internal case management software that increased customer support
-      workflows and response time by 40 percent`,
-      `Writing end-to-end tests in Cypress and Typescript to detect regressions in pipelines`,
-      `Maintaining and deploying internal micro-frontends in React, Typescript, Node, and Azure`,
+      `Created and debugged features for an internal case management software that increased customer support workflows and response time by 40 percent`,
+      `Wrote end-to-end tests in Cypress and Typescript to detect regressions in pipelines`,
+      `Integrated Stripe API into a customer portal to accept card and bank payments for previously paid-by-mail invoices`,
+      `Maintained an in-house React component library`,
     ],
   },
   {
@@ -25,11 +25,11 @@ export const xp = [
     status: 'Full-time',
     location: 'Richmond, VA',
     description: [
-      `Developed an e-commerce microservice in Node.js that wraps a client’s GraphQL Magento service handling inventory
+      `Developed an e-commerce microservice in Node.js that wraps an external GraphQL Magento service handling inventory
       and customer cart interactions`,
       `Wrote a microservice in Node.js that locates resellers for ACER hardware utilizing Google Maps API and DynamoDB`,
-      `Engineered a cron job in C# that queries a client’s web service and parses the XML response to be stored in Redis`,
-      `Managed interns in learning the company’s preferred technologies such as .NET, React, and SDL Tridion CMS`,
+      `Engineered a cron job in C# that queries an external web service and parses the XML response to be stored in Redis`,
+      `Managed interns learning technologies such as .NET, React, and SDL Tridion CMS`,
     ],
   },
   {
@@ -42,7 +42,7 @@ export const xp = [
     status: 'Part-time',
     location: 'Richmond, VA',
     description: [
-      `Performed a POC for migrating between two AWS RDS instances using Python to generate csv files for MSSQL
+      `Delivered a proof-of-concept for migrating two AWS RDS instances using Python to generate csv files for MSSQL
       replication`,
       `Created an internal social media application in React`,
     ],
