@@ -35,7 +35,7 @@ export const Nav = () => {
         </div>
 
         <div
-          className="w-full flex-grow flex md:items-center md:w-auto hidden md:block overflow-x-scroll mt-2 md:mt-0 bg-transparent z-20"
+          className="w-full flex-grow flex hidden mt-2 bg-transparent z-20 md:block overflow-x-scroll md:overflow-x-auto md:items-center md:w-auto md:mt-0"
           id="nav-content"
         >
           <ul className="list-reset flex justify-end flex-1 items-center">
