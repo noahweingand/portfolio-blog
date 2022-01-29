@@ -10,7 +10,10 @@ import { GetServerSidePropsContext } from 'next';
 export default function Experience({ data, userAgent }: { data: string; userAgent: string }) {
   return (
     <PortfolioContainer background={data} userAgent={userAgent}>
-      <div className="relative px-4 w-full h-5/6 justify-center top-24 overflow-y-auto">
+      <div
+        className="relative px-4 w-full h-5/6 justify-center top-24 overflow-y-auto"
+        tabIndex={0}
+      >
         {xp.map((xp) => {
           return (
             <ExperienceCard

@@ -12,7 +12,10 @@ import { GetServerSidePropsContext } from 'next';
 export default function Projects({ data, userAgent }: { data: string; userAgent: string }) {
   return (
     <PortfolioContainer background={data} userAgent={userAgent}>
-      <div className="relative w-full px-4 h-5/6 justify-center top-24 overflow-y-auto">
+      <div
+        className="relative w-full px-4 h-5/6 justify-center top-24 overflow-y-auto"
+        tabIndex={0}
+      >
         {projects.map((project) => {
           return (
             <ProjectCard
