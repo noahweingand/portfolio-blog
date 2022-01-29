@@ -5,7 +5,7 @@ export const projects = [
     startDate: 'March 2021',
     techType: 'Full-stack',
     technology: 'React.js, Node (Express.js), NoSQL (DynamoDB), AWS',
-    link: 'http://google.com',
+    link: 'https://github.com/noahweingand/weingand-baseball-card-tracker',
     description: `A web application I built for my father. He needed an application to log various sport cards for organization and selling purposes. A table displays all cards and their fields (year, fabric, sport, etc.), and a log page is provided to enter in card details. Since my father uses multiple sites to sell, there's a button that provides a download of the database in CSV format from the server. I deployed the application and whitelisted his IP for an AWS VPC.`,
   },
   {
@@ -15,7 +15,7 @@ export const projects = [
     endDate: 'July 2020',
     techType: 'Full-stack',
     technology: 'React.js, Node (Express.js), NoSQL (DynamoDB), AWS',
-    link: 'http://google.com',
+    link: 'https://github.com/noahweingand/no-more-statues',
     description: `A web application I built immediately after George Floyd's murder. The site uses a Leaflet map to render historical monuments of racists and colonizers and tracks if they have been removed or not. One may also search by name or date of monuments removed.`,
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
     endDate: 'May 2020',
     techType: 'Full-stack',
     technology: 'Vue.js, Node (Express.js), MySQL',
-    link: 'http://google.com',
+    link: 'https://github.com/noahweingand/producer-db',
     description: `My final project built for my relational database class. It is essentially Wikipedia but for rap/hip-hop producers!`,
   },
   {
@@ -35,7 +35,7 @@ export const projects = [
     endDate: 'May 2020',
     techType: 'Front-end',
     technology: 'HTML5, CSS, JQuery',
-    link: 'http://google.com',
+    link: 'https://github.com/noahweingand/huntVCU',
     description: `My final project for my UI and design class. It is a scavenger hunt game made available for those wanting to tour VCU during the pandemic.`,
   },
   {
@@ -44,7 +44,7 @@ export const projects = [
     startDate: 'February 2020',
     techType: 'Data Science',
     technology: 'Python, Numpy, Pandas, NLP',
-    link: 'http://google.com',
+    link: 'https://github.com/noahweingand/NLP/tree/master/Twitter%20Sentiment%20Analysis',
     description: `A sentiment analysis classifier built using a decision tree that tagged various tweets using a training set of hand-tagged tweets. Features such as hashtags, emoticons, and punctuation were used to identify the sentiment of tweets.`,
   },
   {
@@ -54,7 +54,7 @@ export const projects = [
     endDate: 'December 2019',
     techType: 'Mobile',
     technology: 'Java, Android Studio, JUnit',
-    link: 'http://google.com',
+    link: 'https://github.com/noahweingand/CourseQuest',
     description: `A mobile application that queries the web for descriptions and links for free online courses. I wrote several web scrapers for sites such as Udemy, Coursera, etc.`,
   },
 ];

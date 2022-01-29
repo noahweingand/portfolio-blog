@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from '../general';
 
 type ProjectCardProps = {
   title: string;
@@ -11,13 +11,13 @@ type ProjectCardProps = {
   description: string;
 };
 
-const getDateFormat = (start: string, end?: string) => {
+const getDate = (start: string, end?: string) => {
   return end ? (
-    <p className="text-gray-500 justify-self-end">
+    <span className="text-gray-500 justify-self-end">
       {start} - {end}
-    </p>
+    </span>
   ) : (
-    <p className="text-gray-500 justify-self-end">{start}</p>
+    <span className="text-gray-500 justify-self-end">{start}</span>
   );
 };
 
@@ -35,24 +35,22 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
     <div className="max-w-md w-full mx-auto mb-8 px-4 bg-white rounded-xl shadow-md md:max-w-4xl">
       <div className="md:flex">
         <div className="pt-8 pr-4 pb-8 pl-2">
-          <div className="uppercase tracking-wide font-semibold">{title}</div>
+          <span className="uppercase tracking-wide font-semibold">{title}</span>
           <div className="grid grid-cols-2 mt-1">
-            <p className="block leading-tight text-sm font-medium text-black">{type}</p>
-            <div className="text-gray-500 justify-self-end">
-              {getDateFormat(startDate, endDate)}
-            </div>
+            <span className="block leading-tight text-sm font-medium text-black">{type}</span>
+            {getDate(startDate, endDate)}
           </div>
           <div className="mt-2 grid grid-cols-2 justify-item-stretch text-gray-500">
-            <p>{techType}</p>
+            <span>{techType}</span>
             <div className="justify-self-end">
-              <p>{technology}</p>
+              <span>{technology}</span>
             </div>
           </div>
-          <p className="mt-2 text-gray-500">
-            <a className="underline hover:no-underline" href={link}>
+          <span className="mt-2 text-gray-500">
+            <Link className="underline hover:no-underline" href={link}>
               View on Github
-            </a>
-          </p>
+            </Link>
+          </span>
           <p className="mt-4 text-gray-500">{description}</p>
         </div>
       </div>
