@@ -5,6 +5,7 @@ import { Icon } from './icon';
 type SkillCardProps = {
   domain: string;
   skills: {
+    id: number;
     name: string;
     icon?: IconType;
   }[];
@@ -18,9 +19,9 @@ export const SkillCard: React.FC<SkillCardProps> = ({ domain, skills, isMobile }
         <span className="flex font-semibold text-lg">{domain}</span>
         <div className="pt-12">
           <div className="flex flex-wrap text-md list-disc list-inside inline justify-around items-center">
-            {skills.map((skill, idx) => {
+            {skills.map((skill) => {
               return !!skill.icon ? (
-                <div key={idx} className="flex md:pr-4">
+                <div key={skill.id} className="flex md:pr-4">
                   <Icon
                     icon={skill.icon}
                     title={skill.name}
@@ -30,7 +31,7 @@ export const SkillCard: React.FC<SkillCardProps> = ({ domain, skills, isMobile }
                   />
                 </div>
               ) : (
-                <div key={idx} className="flex justify-around">
+                <div key={skill.id} className="flex justify-around">
                   <span className="text-xl">{skill.name}</span>
                 </div>
               );

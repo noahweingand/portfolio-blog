@@ -1,5 +1,6 @@
 export const xp = [
   {
+    id: 1,
     company: 'CoStar Group, Inc.',
     title: 'Associate Software Engineer',
     imagePath: '/experience/costar_logo.png',
@@ -16,6 +17,7 @@ export const xp = [
     ],
   },
   {
+    id: 2,
     company: 'Tahzoo',
     title: 'Associate Developer',
     imagePath: '/experience/tahzoo_logo.png',
@@ -33,6 +35,7 @@ export const xp = [
     ],
   },
   {
+    id: 3,
     company: 'Tahzoo',
     title: 'Technical Intern',
     imagePath: '/experience/tahzoo_logo.png',
@@ -48,6 +51,7 @@ export const xp = [
     ],
   },
   {
+    id: 4,
     company: 'Virginia Commonwealth University',
     title: 'Student',
     imagePath: '/experience/vcu.png',

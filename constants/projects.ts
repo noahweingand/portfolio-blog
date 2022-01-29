@@ -1,5 +1,6 @@
 export const projects = [
   {
+    id: 1,
     title: 'Common Card Collection',
     type: 'Personal',
     startDate: 'March 2021',
@@ -9,6 +10,7 @@ export const projects = [
     description: `A web application I built for my father. He needed an application to log various sport cards for organization and selling purposes. A table displays all cards and their fields (year, fabric, sport, etc.), and a log page is provided to enter in card details. Since my father uses multiple sites to sell, there's a button that provides a download of the database in CSV format from the server. I deployed the application and whitelisted his IP for an AWS VPC.`,
   },
   {
+    id: 2,
     title: 'No More Statues',
     type: 'Personal',
     startDate: 'June 2020',
@@ -19,6 +21,7 @@ export const projects = [
     description: `A web application I built immediately after George Floyd's murder. The site uses a Leaflet map to render historical monuments of racists and colonizers and tracks if they have been removed or not. One may also search by name or date of monuments removed.`,
   },
   {
+    id: 3,
     title: 'Producer Database',
     type: 'Academic',
     startDate: 'January 2020',
@@ -29,6 +32,7 @@ export const projects = [
     description: `My final project built for my relational database class. It is essentially Wikipedia but for rap/hip-hop producers!`,
   },
   {
+    id: 4,
     title: 'HuntVCU',
     type: 'Academic',
     startDate: 'January 2020',
@@ -39,6 +43,7 @@ export const projects = [
     description: `My final project for my UI and design class. It is a scavenger hunt game made available for those wanting to tour VCU during the pandemic.`,
   },
   {
+    id: 5,
     title: 'Tweet Tagger',
     type: 'Academic',
     startDate: 'February 2020',
@@ -48,6 +53,7 @@ export const projects = [
     description: `A sentiment analysis classifier built using a decision tree that tagged various tweets using a training set of hand-tagged tweets. Features such as hashtags, emoticons, and punctuation were used to identify the sentiment of tweets.`,
   },
   {
+    id: 6,
     title: 'CourseBot',
     type: 'Academic',
     startDate: 'August 2019',

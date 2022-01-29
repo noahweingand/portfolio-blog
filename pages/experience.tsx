@@ -11,9 +11,10 @@ export default function Experience({ data, userAgent }: { data: string; userAgen
   return (
     <PortfolioContainer background={data} userAgent={userAgent}>
       <div className="relative px-4 w-full h-5/6 justify-center top-24 overflow-y-auto">
-        {xp.map((xp, idx) => {
+        {xp.map((xp) => {
           return (
             <ExperienceCard
+              key={xp.id}
               company={xp.company}
               title={xp.title}
               location={xp.location}
@@ -23,7 +24,6 @@ export default function Experience({ data, userAgent }: { data: string; userAgen
               descriptions={xp.description}
               imagePath={xp.imagePath}
               altImageText={xp.altImageText}
-              key={idx}
             />
           );
         })}
