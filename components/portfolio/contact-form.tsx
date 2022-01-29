@@ -61,10 +61,14 @@ export const ContactForm = () => {
     <form className="w-full max-w-lg px-4" onSubmit={onSubmit}>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label
+            htmlFor="first-name"
+            className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+          >
             First Name
           </label>
           <input
+            id="first-name"
             className="appearance-none block w-full bg-gray-200 text-black border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             type="text"
             placeholder="Jane"
@@ -75,10 +79,14 @@ export const ContactForm = () => {
           {/* <p className="text-red-500 border-red-500 text-xs italic">Please fill out this field.</p> */}
         </div>
         <div className="w-full md:w-1/2 px-3">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label
+            htmlFor="last-name"
+            className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+          >
             Last Name
           </label>
           <input
+            id="last-name"
             className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             type="text"
             placeholder="Doe"
@@ -90,10 +98,14 @@ export const ContactForm = () => {
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label
+            htmlFor="email"
+            className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+          >
             E-mail
           </label>
           <input
+            id="email"
             className="appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             type="email"
             placeholder="janedoe@gmail.com"
@@ -105,10 +117,14 @@ export const ContactForm = () => {
       </div>
       <div className="flex flex-wrap -mx-3 mb-6">
         <div className="w-full px-3">
-          <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+          <label
+            htmlFor="message"
+            className="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+          >
             Message
           </label>
           <textarea
+            id="message"
             className="no-resize appearance-none block w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
