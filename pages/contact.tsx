@@ -6,7 +6,6 @@ import { APP_URL } from '../constants/env';
 // Services
 import fetch from 'node-fetch';
 // Types
-import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
 
 export default function Contact({ data, userAgent }: { data: string; userAgent: string }) {

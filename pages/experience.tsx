@@ -5,7 +5,6 @@ import { ExperienceCard } from '../components/portfolio';
 import { xp } from '../constants/xp';
 import { APP_URL } from '../constants/env';
 // Types
-import { SpotifyItem } from '../types/spotify';
 import { GetServerSidePropsContext } from 'next';
 
 export default function Experience({ data, userAgent }: { data: string; userAgent: string }) {
