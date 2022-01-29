@@ -13,23 +13,21 @@ export default function Projects({ data, userAgent }: { data: string; userAgent:
   return (
     <PortfolioContainer background={data} userAgent={userAgent}>
       <div className="relative w-full px-4 h-5/6 justify-center top-24 overflow-y-auto">
-        <div className="flex flex-wrap">
-          {projects.map((project) => {
-            return (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                type={project.type}
-                startDate={project.startDate}
-                endDate={project.endDate}
-                techType={project.techType}
-                technology={project.technology}
-                link={project.link}
-                description={project.description}
-              />
-            );
-          })}
-        </div>
+        {projects.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              type={project.type}
+              startDate={project.startDate}
+              endDate={project.endDate}
+              techType={project.techType}
+              technology={project.technology}
+              link={project.link}
+              description={project.description}
+            />
+          );
+        })}
       </div>
     </PortfolioContainer>
   );
