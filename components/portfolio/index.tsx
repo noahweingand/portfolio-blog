@@ -1,6 +1,2 @@
-export * from './nav/index';
-export * from './landing';
-export * from './experience-card';
-export * from './project-card';
-export * from './contact-form';
-export * from './spotify-stub';
+export { Landing } from './landing';
+export { SpotifyStub } from './spotify-stub';

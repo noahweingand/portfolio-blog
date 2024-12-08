@@ -1,5 +1,5 @@
-import { TiDocumentText } from 'react-icons/ti';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { TiDocumentText } from 'react-icons/ti';
 
 import { SpotifyItem } from '../../types/spotify';
 import { Link } from '../general';
@@ -39,7 +39,7 @@ export const Landing: React.FC<HomeProps> = ({ name, title, data }) => {
               color="white"
             />
           </Link>
-          <Link href="noah_weingand_resume.pdf" aria-label="Resume">
+          <Link href="noah_weingand_resume_20241207.pdf" aria-label="Resume">
             <Icon
               icon={TiDocumentText}
               text="Resume"

@@ -1,10 +1,10 @@
-// Components
 import { SiSpotify } from 'react-icons/si';
+
+import { SpotifyItem } from '../../types/spotify';
+
 import { Link } from '../general';
 import { Icon } from './icon';
-// Types
-import { SpotifyItem } from '../../types/spotify';
-// Styles
+
 import 'react-tippy/dist/tippy.css';
 
 const renderArtists = (artists: string[], songName: string): string => {

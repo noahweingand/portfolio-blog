@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import { Nav } from './portfolio/index';
 import { ToastContainer } from 'react-toastify';
 import { UserAgent, useUserAgent } from 'next-useragent';
 import 'react-toastify/dist/ReactToastify.css';
@@ -51,10 +50,7 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({
           name="keywords"
           content="nowein,Noah,Weingand,portfolio,projects,technology,tech,coding,programming"
         />
-        <link
-          rel="icon"
-          href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/237/male-technologist_1f468-200d-1f4bb.png"
-        ></link>
+        <link rel="icon" href="./favicon.svg"></link>
       </Head>
       <main>
         <div
@@ -65,7 +61,6 @@ export const PortfolioContainer: React.FC<PortfolioProps> = ({
             <ToastContainer />
             {getBackground(ua, background)}
           </div>
-          <Nav />
           {children}
         </div>
       </main>
